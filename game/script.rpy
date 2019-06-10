@@ -15,24 +15,35 @@ define hernan = Character("Hernan")
 label start:
 
     scene prologo
-    
+
+    play music "<from 16 to 256>music/bg/prologo.ogg"
+
     "Año 1199, el papa actual pone en marcha la cuarta cruzada"
     "En 1202 los cruzados fueron empleados para luchar contra los hùngaros de  zadar"
     "Esto causa la excomulgación de los cruzados."
+
+    play sound "music/efectos/guerra.mp3"
 
     c1 "¡Nos han rodeado!"
     c2 "¡debemos retirarnos a la fortaleza!"
     c1 "Cuidado a tu izquierda"
 
-    "En ese momento se escucho el viento ser cortado por el filo de una espada"
+    scene corte1
 
     play sound "music/efectos/espadas.mp3"
-    
+
+    "En ese momento se escucho el viento ser cortado por el filo de una espada"
+
+    scene corte2
+
     "Lo que le siguió fue un grito"
 
-    scene espada
+    scene corte3
     
     c2 "aaagh"
+
+    scene espada
+
     c1 "maldito"
     
     "el cruzado mato a quien cortó a su compañero"
@@ -63,8 +74,9 @@ label start:
     cd "Ya no luchamos por la causa, si no por sobrevivir"
     
     scene hungaros
-    
+
     "En ese momento los dos cruzados corrieron hacia unos húngaros que parecían acercarse"
+    play sound "music/efectos/guerra.mp3"
     "Después de otras horas de lucha, los cruzados estaban fatigados"
     "Los enemigos a su alrededor estaban sorprendidos por la fuerza de sus adversarios"
     "Pero al notar que estaban cansados, todos los enemigos restantes se lanzaron contra ellos…"
@@ -74,6 +86,9 @@ label start:
     c2 "ORACIONES INENTENDIBLES"
     
     "Eso fue lo último que se supo de aquellos dos soldados…"
+
+    stop sound
+    stop music fadeout 1.0
 
 label capitulo1:
 

@@ -24,17 +24,17 @@ label start:
 
     play sound "music/efectos/guerra.mp3"
 
+    scene castillo
+
     c1 "¡Nos han rodeado!"
     c2 "¡debemos retirarnos a la fortaleza!"
     c1 "Cuidado a tu izquierda"
 
-    scene corte1
-
-    play sound "music/efectos/espadas.mp3"
+    scene corte2
 
     "En ese momento se escucho el viento ser cortado por el filo de una espada"
 
-    scene corte2
+    play sound "music/efectos/espadas.mp3"
 
     "Lo que le siguió fue un grito"
 
@@ -42,7 +42,7 @@ label start:
     
     c2 "aaagh"
 
-    scene espada
+    scene castillo
 
     c1 "maldito"
     
@@ -72,13 +72,13 @@ label start:
     
     c1 "Te acompañare, tienes razón, solo quedamos nosotros"
     cd "Ya no luchamos por la causa, si no por sobrevivir"
-    
-    scene hungaros
 
     "En ese momento los dos cruzados corrieron hacia unos húngaros que parecían acercarse"
 
     play sound "music/efectos/guerra.mp3"
-    
+
+    scene hungaros
+
     "Después de otras horas de lucha, los cruzados estaban fatigados"
     "Los enemigos a su alrededor estaban sorprendidos por la fuerza de sus adversarios"
     "Pero al notar que estaban cansados, todos los enemigos restantes se lanzaron contra ellos…"
@@ -93,6 +93,8 @@ label start:
     stop music fadeout 1.0
 
 label capitulo1:
+
+    play music "music/bg/capitulo1.ogg"
 
     scene noche
 
@@ -129,15 +131,23 @@ if opcion == "1":
         
         "El chico venía acompañado de quienes parecían ser los médicos de la aldea"
         "Pasaron unas cuantas horas..."
+
+        play sound "music/efectos/bebe.mp3"
+
         "De pronto se escuchó el llanto de un bebé..."
         "Ese fue el momento en el que nació el mejor guerrero azteca, conocido hasta ahora"
 
         padre "Te pondré Tzilacatzin"
 
+        scene parto
+
         "Al mismo tiempo a miles de km, en europa, otra madre daba a luz a un bebé llamado Hernán y de apellido Cortez,"
         "El cual se convertiría en uno de los conquistadores más famosos dentro de la historia"
         "Aquellos bebés recién nacidos, no sabían que estaban destinados a encontrarse"
         "Uno nació en un pueblo de muchos dioses, el otro en el de un único dios"
+        
+        stop sound
+        stop music
 
 if opcion == "2":
     
@@ -149,15 +159,23 @@ if opcion == "2":
         chica "agh!!"
         
         "Pasaron unas cuantas horas...."
+
+        play sound "music/efectos/bebe.mp3"
+
         "De pronto se escuchó el llanto de un bebé"
         "ese fue el momento en el que nació el mejor guerrero azteca, conocido hasta ahora"
 
         padre "Te pondré Tzilacatzin"
 
+        scene parto
+
         "Al mismo tiempo a miles de km, en europa, otra madre daba a luz a un bebé llamado Hernán y de apellido Cortez,"
         "El cual se convertiría en uno de los conquistadores más famosos dentro de la historia"
         "Aquellos bebés recién nacidos, no sabían que estaban destinados a encontrarse"
         "Uno nació en un pueblo de muchos dioses, el otro en el de un único dios"
+
+        stop sound
+        stop music
 
 label capitulo2:
     
@@ -176,7 +194,7 @@ label capitulo2:
     "Al oír la discusión a lo lejos la persona en cuestión observó al joven guerrero, lo cual causó curiosidad en el"
     "En ese momento, el guerrero sintió la mirada de aquel sujeto, lo cual le dio una extraña sensación de nostalgia."
 
-    hernan "¿De quÉ estais hablando?"
+    hernan "¿De qué estais hablando?"
     malinalli "De nada importante, estos sujetos solo tenían dudas de nuestro destino"
     hernan "Ya veo, todo seria mas facil si entendiera su idioma"
     hernan "Por cierto, ¿quién es el?"

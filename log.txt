@@ -1,4 +1,4 @@
-Sun Jun  9 23:44:12 2019
+Mon Jun 10 01:09:59 2019
 Darwin-18.6.0-x86_64-i386-64bit
 Ren'Py 7.2.1.457
  
@@ -37,7 +37,7 @@ Interface start took 0.03s
 primary display bounds: (0, 0, 1440, 900)
 swap interval: 1 frames
 Windowed mode.
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Screen sizes: virtual=(1280, 720) physical=(1271, 715) drawable=(1271, 715)
 Vendor: 'Intel Inc.'
 Renderer: 'Intel HD Graphics 5000 OpenGL Engine'
 Version: '2.1 INTEL-12.9.22'
@@ -184,11 +184,11 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 0.837705850601s
+Total time until interface ready: 0.851211071014s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.015293 seconds.
-- Frame drawn at 0.031968 seconds.
-- Frame drawn at 0.047938 seconds.
-- Frame drawn at 0.065044 seconds.
-- 0.065044 seconds to render 5 frames.
+- Frame drawn at 0.014123 seconds.
+- Frame drawn at 0.030745 seconds.
+- Frame drawn at 0.046888 seconds.
+- Frame drawn at 0.064351 seconds.
+- 0.064351 seconds to render 5 frames.

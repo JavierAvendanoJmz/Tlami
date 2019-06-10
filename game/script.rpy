@@ -76,7 +76,9 @@ label start:
     scene hungaros
 
     "En ese momento los dos cruzados corrieron hacia unos húngaros que parecían acercarse"
+
     play sound "music/efectos/guerra.mp3"
+    
     "Después de otras horas de lucha, los cruzados estaban fatigados"
     "Los enemigos a su alrededor estaban sorprendidos por la fuerza de sus adversarios"
     "Pero al notar que estaban cansados, todos los enemigos restantes se lanzaron contra ellos…"
